@@ -3,27 +3,42 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="icon" type="image/png" href="images/developer-icon.png" />
   <title>dombuildsdev — Android app developer</title>
   <style>
     :root { color-scheme: light dark; }
-    body { font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; max-width: 720px; margin: 3rem auto; padding: 0 1.25rem; line-height: 1.6; }
-    h1 { font-size: 1.6rem; }
-    footer { margin-top: 3rem; font-size: 0.85rem; opacity: 0.7; }
+    * { box-sizing: border-box; }
+    body { font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; margin: 0; color: #1f1f1f; background: #ffffff; }
+    @media (prefers-color-scheme: dark) {
+      body { color: #e3e3e3; background: #111111; }
+      a { color: #8ab4f8; }
+    }
+    .hero { width: 100%; max-height: 380px; overflow: hidden; display: flex; align-items: center; justify-content: center; border-bottom: 1px solid rgba(0,0,0,.08); }
+    .hero img { width: 100%; height: auto; display: block; }
+    main { max-width: 720px; margin: 0 auto; padding: 2.5rem 1.25rem 1rem; }
+    h1 { font-size: 1.6rem; margin: 1.5rem 0 .5rem; display: flex; align-items: center; gap: .75rem; }
+    h1 img { width: 52px; height: 52px; border-radius: 12px; }
+    p { line-height: 1.6; }
+    footer { max-width: 720px; margin: 0 auto; padding: 0 1.25rem 3rem; font-size: 0.85rem; opacity: 0.75; }
     a { color: #0b57d0; }
   </style>
 </head>
 <body>
-  <h1>dombuildsdev</h1>
-  <p>Independent Android developer — useful, quiet, offline-first study and utility apps.</p>
+  <div class="hero"><img src="images/header.jpg" alt="dombuildsdev" /></div>
 
-  <h2>Apps</h2>
-  <ul>
-    <li><a href="https://dombuildsdev.github.io/ham-radio-privacy/">HAM Technician Prep 2026–2030</a> — ham radio exam prep (privacy policy).</li>
-    <li><a href="https://dombuildsdev.github.io/world-flag-quiz/">World Flags &amp; Capitals Quiz</a> — learn flags and capitals (privacy policy).</li>
-  </ul>
+  <main>
+    <h1><img src="images/developer-icon.png" alt="" />dombuildsdev</h1>
+    <p>Independent Android developer — useful, quiet, offline-first study and utility apps.</p>
 
-  <h2>Contact</h2>
-  <p><a href="mailto:dombuildsdev@gmail.com">dombuildsdev@gmail.com</a></p>
+    <h2>Apps</h2>
+    <ul>
+      <li><a href="https://dombuildsdev.github.io/ham-radio-privacy/">HAM Technician Prep 2026–2030</a> — ham radio exam prep (privacy policy).</li>
+      <li><a href="https://dombuildsdev.github.io/world-flag-quiz/">World Flags &amp; Capitals Quiz</a> — learn flags and capitals (privacy policy).</li>
+    </ul>
+
+    <h2>Contact</h2>
+    <p><a href="mailto:dombuildsdev@gmail.com">dombuildsdev@gmail.com</a></p>
+  </main>
 
   <footer>
     <p><a href="https://adssettings.google.com">Google ad settings</a> · <a href="https://policies.google.com/technologies/ads">Google ads policies</a></p>
